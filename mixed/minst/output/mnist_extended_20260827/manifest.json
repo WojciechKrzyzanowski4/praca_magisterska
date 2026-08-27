@@ -1,0 +1,38 @@
+{
+  "generated_from_training": false,
+  "configuration": {
+    "seed": 42,
+    "train_size": 5000,
+    "monitor_size": 1000,
+    "gd_epochs": 3,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "evolution_generations": 150,
+    "population_size": 30,
+    "elite_count": 2,
+    "mutation_std": 0.02,
+    "mutation_scope": "all",
+    "samples_per_class": 40,
+    "diversity_weight": 0.3,
+    "output_directory_name": "mnist_extended_20260827"
+  },
+  "data_protocol": {
+    "training": "first 5000 images of the official MNIST training split",
+    "monitoring": "first 1000 images of the official MNIST test split",
+    "objective_subset": "40 images per class selected without replacement with seed 42"
+  },
+  "individual_evaluations": 4500,
+  "model_files": {
+    "GD": {
+      "path": "output/mnist_extended_20260827/checkpoints/GD.npz",
+      "sha256": "6bfeb4767c4dd6cb346175545aed9567383e723bf21b83e81236161435bbcdcc"
+    },
+    "EVO-random": {
+      "path": "output/mnist_extended_20260827/checkpoints/EVO_random.npz",
+      "sha256": "5100c6d9e942ed893a76df07fc077800ccfcd6e258f98b1ab9fb0edccdeb8971"
+    }
+  },
+  "figures": [
+    "figures/mnist_wyniki_przebieg_rozszerzony.png"
+  ]
+}

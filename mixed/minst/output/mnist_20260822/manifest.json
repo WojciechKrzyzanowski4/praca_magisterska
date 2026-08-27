@@ -1,0 +1,96 @@
+{
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "train_size": 3000,
+  "validation_size": 1000,
+  "test_size": 2000,
+  "gd_epochs": 3,
+  "gd_extra_epochs": 1,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "evolution_generations": 8,
+  "population_size": 8,
+  "elite_count": 2,
+  "samples_per_class": 20,
+  "random_mutation_std": 0.01,
+  "warm_mutation_std": 0.003,
+  "output_directory_name": "mnist_20260822",
+  "generated_from_training": false,
+  "parameter_count": 206922,
+  "classifier_parameter_count": 202122,
+  "data_protocol": {
+    "source": "mixed/minst/data/mnist.npz",
+    "split": "stratified without replacement",
+    "training_pool": "official MNIST training split",
+    "validation_pool": "official MNIST training split excluding selected training images",
+    "test_pool": "official MNIST test split"
+  },
+  "robustness_protocol": {
+    "noise_std": [
+      0.0,
+      0.15,
+      0.3
+    ],
+    "noise_seed_rule": "experiment_seed + 1000"
+  },
+  "checkpoints": {
+    "EVO_random_11": {
+      "path": "output/mnist_20260822/checkpoints/EVO_random_11.npz",
+      "sha256": "425c93e5edf2b0a63261af998f889af64177bc89f898d0663e40450cede2a2cb"
+    },
+    "EVO_random_29": {
+      "path": "output/mnist_20260822/checkpoints/EVO_random_29.npz",
+      "sha256": "0fcc1382c3ceb921252597383c663a1b9c419e89d7dd61f9afc5e2a2b582b109"
+    },
+    "EVO_random_47": {
+      "path": "output/mnist_20260822/checkpoints/EVO_random_47.npz",
+      "sha256": "d866710f8e9759c1d66deb66b1bdcdf71336f35430e8923b512c490f9fe86ea7"
+    },
+    "GD_11": {
+      "path": "output/mnist_20260822/checkpoints/GD_11.npz",
+      "sha256": "d465d7cf5e869134fa260bb5b0fd80f43e19e5ba028c1f49bb5e8d1ef2024e58"
+    },
+    "GD_29": {
+      "path": "output/mnist_20260822/checkpoints/GD_29.npz",
+      "sha256": "93e0e4b1a1575927794cde3373ad6e289a33881ed7f8dc48c71c8e6466da4f22"
+    },
+    "GD_47": {
+      "path": "output/mnist_20260822/checkpoints/GD_47.npz",
+      "sha256": "8d529d48a48940e187bd6c13e6005687d63f3b595f37f44aa4231ddbd20c6ab2"
+    },
+    "GD_EVO_11": {
+      "path": "output/mnist_20260822/checkpoints/GD_EVO_11.npz",
+      "sha256": "32e0d4e594cfc68771de0b4289e65e8dd42d17d7fa8b4de0d51507fed2e6dde6"
+    },
+    "GD_EVO_29": {
+      "path": "output/mnist_20260822/checkpoints/GD_EVO_29.npz",
+      "sha256": "fcda947685275ec85c91995503d1dd942b950098f2d0fadb714498d364305a41"
+    },
+    "GD_EVO_47": {
+      "path": "output/mnist_20260822/checkpoints/GD_EVO_47.npz",
+      "sha256": "ccd87852528bd347a64cb7f10ba45d9cc8ee82f4aa0ce1f652ebbd796f5e193e"
+    },
+    "GD_GD_11": {
+      "path": "output/mnist_20260822/checkpoints/GD_GD_11.npz",
+      "sha256": "25a0a038e89c10a9ef1c57b28ae9a6ff8bb83a5ffed82aa6f90376431ee9f546"
+    },
+    "GD_GD_29": {
+      "path": "output/mnist_20260822/checkpoints/GD_GD_29.npz",
+      "sha256": "74d5354289bab9c109054bbd68c2ee5647b4a886c404e104cc6e1e2647f4cd05"
+    },
+    "GD_GD_47": {
+      "path": "output/mnist_20260822/checkpoints/GD_GD_47.npz",
+      "sha256": "df79bb9d1852bd3f36b932c87ba417ad2d37e5ec921a578c911eadf10652799c"
+    }
+  },
+  "figures": [
+    "figures/mnist_wyniki_przebieg.png",
+    "figures/mnist_wyniki_porownanie_metod.png",
+    "figures/mnist_wyniki_klasy.png",
+    "figures/mnist_wyniki_szum.png",
+    "figures/mnist_wyniki_macierze.png"
+  ]
+}

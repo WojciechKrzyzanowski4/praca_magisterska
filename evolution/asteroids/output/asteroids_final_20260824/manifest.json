@@ -1,0 +1,162 @@
+{
+  "generated_from_training": false,
+  "best_training_fitness": null,
+  "training_protocol": {
+    "population_size": 80,
+    "generations": 50,
+    "cx_prob": 0.65,
+    "mut_prob": 0.03,
+    "mutation_sigma": 0.2,
+    "mutation_sigma_min": 0.05,
+    "tournament_size": 3,
+    "eval_max_steps": 7200,
+    "random_seed": 123,
+    "elites": 2,
+    "reevaluate_topk": 5,
+    "training_scenarios": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "hidden_size": 48,
+    "evaluation_scenarios": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "representative_scenario": 8,
+    "lives": 1,
+    "fps": 60,
+    "artifact_directory": "asteroids_final_20260824",
+    "phases": [
+      {
+        "phase": 1,
+        "name": "P1-DODGE",
+        "generations": 150,
+        "frame_skip": 3
+      },
+      {
+        "phase": 2,
+        "name": "P2-AIM",
+        "generations": 150,
+        "frame_skip": 2
+      },
+      {
+        "phase": 3,
+        "name": "P3-KILL",
+        "generations": 50,
+        "frame_skip": 2
+      }
+    ],
+    "max_seconds_by_phase": {
+      "1": 120,
+      "2": 120,
+      "3": 300
+    }
+  },
+  "evaluation_protocol": {
+    "scenarios": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "lives": 1,
+    "fps": 60,
+    "max_seconds_by_phase": {
+      "1": 120,
+      "2": 120,
+      "3": 300
+    },
+    "max_steps_by_phase": {
+      "1": 7200,
+      "2": 7200,
+      "3": 18000
+    },
+    "phase_frame_skip": {
+      "1": 3,
+      "2": 2,
+      "3": 2
+    },
+    "scenario_note": "Scenarios 0-11 form the final deterministic evaluation set; some offsets also occur in the training set."
+  },
+  "scenario8": {
+    "phase": 3,
+    "scenario": 8,
+    "seconds": 132.56666666666666,
+    "won": true,
+    "waves": 5,
+    "kills": 540,
+    "shots": 1012,
+    "efficiency": 0.5335968379446641,
+    "mean_alignment": 0.046504068998109174,
+    "remaining_asteroids": 0,
+    "lives": 1
+  },
+  "genomes": {
+    "1": {
+      "path": "evolution/asteroids/output/asteroid_killer_phase1.npy",
+      "sha256": "0067df2892d7bc21b6bbbe2574f4ce3410197d543db598f3c59b19674ea80071",
+      "parameters": 3892
+    },
+    "2": {
+      "path": "evolution/asteroids/output/asteroid_killer_phase2.npy",
+      "sha256": "624e86327deca3d884d4b4532be7019cc222eb3488d85505dd23683a36cc8334",
+      "parameters": 3892
+    },
+    "3": {
+      "path": "evolution/asteroids/output/asteroid_killer_phase3.npy",
+      "sha256": "a1f85d7bfbfa3f1d02c55f75af21b4dc9c5bd55c96ee24e0922b0eb9842371af",
+      "parameters": 3892
+    }
+  },
+  "figures": [
+    "evolution/asteroids/output/asteroids_final_20260824/figures/asteroids_wyniki_fazy.png",
+    "evolution/asteroids/output/asteroids_final_20260824/figures/asteroids_wyniki_scenariusze.png",
+    "evolution/asteroids/output/asteroids_final_20260824/figures/asteroids_wyniki_przebieg_zwyciestwa.png",
+    "evolution/asteroids/output/asteroids_final_20260824/figures/asteroids_wyniki_trajektoria.png",
+    "evolution/asteroids/output/asteroids_final_20260824/figures/asteroids_wyniki_klatki.png"
+  ],
+  "screenshots": {
+    "phase1": "evolution/asteroids/output/asteroids_final_20260824/screenshots/asteroids_faza1.png",
+    "phase2": "evolution/asteroids/output/asteroids_final_20260824/screenshots/asteroids_faza2.png",
+    "phase3_action": "evolution/asteroids/output/asteroids_final_20260824/screenshots/asteroids_faza3_walka.png",
+    "phase3_victory": "evolution/asteroids/output/asteroids_final_20260824/screenshots/asteroids_faza3_wygrana.png"
+  },
+  "artifacts": [
+    "figures/asteroids_wyniki_fazy.png",
+    "figures/asteroids_wyniki_klatki.png",
+    "figures/asteroids_wyniki_przebieg_zwyciestwa.png",
+    "figures/asteroids_wyniki_scenariusze.png",
+    "figures/asteroids_wyniki_trajektoria.png",
+    "screenshots/asteroids_faza1.png",
+    "screenshots/asteroids_faza2.png",
+    "screenshots/asteroids_faza3_walka.png",
+    "screenshots/asteroids_faza3_wygrana.png",
+    "tables/asteroids_scenario8_timeline.csv",
+    "tables/asteroids_scenarios.csv",
+    "tables/asteroids_summary.csv"
+  ]
+}
